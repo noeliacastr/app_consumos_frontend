@@ -45,7 +45,7 @@ function App(){
       
       {isAuth && !!token ? (
         <div>
-          {currentUser.Rol === "admin" ? (
+          {currentUser.Departamento === "SISTEMA" ? (
             <Routes>
               <Route element={<PrivateRoute isAuth={isAuth} />}>
               <Route path="/" element={<HomeAdmin />} />

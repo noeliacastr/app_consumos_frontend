@@ -67,7 +67,7 @@ const Profile = () => {
                             <Form.Label>Rol</Form.Label>
                             <Form.Control
                                 type="text"
-                                value={currentUser?.Rol}
+                                value={currentUser?.Departamento}
                                 disabled
                             />
                         </Form.Group>

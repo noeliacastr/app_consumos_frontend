@@ -48,7 +48,7 @@ export default function ButtonAppBar() {
                 </Offcanvas.Header>
                 <Offcanvas.Body className="offcanvas-body-custom">
                     <Nav className="flex-column nav-links">
-                        {currentUser.Rol === 'admin' && (
+                        {currentUser.Departamento === 'SISTEMA' && (
                             <>
                                 <Nav.Link className="nav-link" as={Link} to="/">Noticias</Nav.Link>
                                 <Nav.Link className="nav-link" as={Link} to="/sugerencias">Sugerencias</Nav.Link>
@@ -56,7 +56,7 @@ export default function ButtonAppBar() {
                                 <Nav.Link className="nav-link" as={Link} to="/ventas">Consulta de venta</Nav.Link>
                             </>
                         )}
-                        {currentUser.Rol === 'empleado' && (
+                        {currentUser.Departamento === 'EMPLEADOS' && (
                             <>
                                 <Nav.Link className="nav-link" as={Link} to="/">Noticias</Nav.Link>
                                 <Nav.Link className="nav-link" as={Link} to="/sugerencias">Sugerencias</Nav.Link>

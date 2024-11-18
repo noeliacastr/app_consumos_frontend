@@ -12,6 +12,7 @@ const EditEmpleado = ({ empleado }) => {
         NoEmpleado: empleado?.sub || "", // Cambiado de empleado.NoEmpleado a empleado.sub
         Nombre: empleado?.Nombre || "",
         Rol: empleado?.Rol || "",
+        Departamento: empleado?.Departamento || "",
         PasswordEmp: "",
     });
     const editEmpleado = useMutation({
@@ -112,7 +113,7 @@ const EditEmpleado = ({ empleado }) => {
                             <Form.Control
                                 type="text"
                                 name="Rol"
-                                value={empleados.Rol}
+                                value={empleados.Departamento}
                                 onChange={handleChangeEdit}
                                 disabled
                             />
