@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useAuthStore } from '../hooks/useAuthStore';
 
 const menuAPI = axios.create({
-    baseURL: 'http://127.0.0.1:8000/coral/menu',
+    baseURL: 'https://appconsumos-coral.onrender.com/coral/menu',
 });
 
 // Obtener el token dinámicamente antes de cada solicitud

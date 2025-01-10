@@ -2,7 +2,7 @@ import axios from 'axios';
 import { TOKEN } from './global';
 
 const ventasAPI = axios.create({
-    baseURL: 'http://127.0.0.1:8000/coral/ventas',
+    baseURL: 'https://appconsumos-coral.onrender.com/coral/ventas',
     headers: {
         'Authorization': `Bearer ${TOKEN}`
     }

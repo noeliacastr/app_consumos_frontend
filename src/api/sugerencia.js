@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useAuthStore } from '../hooks/useAuthStore';
 
 const sugerenciaAPI = axios.create({
-    baseURL: 'http://127.0.0.1:8000/coral/sugerencias',
+    baseURL: 'https://appconsumos-coral.onrender.com/coral/sugerencias',
 });
 
 

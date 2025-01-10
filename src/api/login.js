@@ -2,7 +2,7 @@ import axios from 'axios';
 import { TOKEN } from './global';
 
 const usuarioAPI = axios.create({
-    baseURL: 'http://127.0.0.1:8000/coral/empleados'
+    baseURL: 'https://appconsumos-coral.onrender.com/coral/empleados'
 });
 
 export const authtenticated = false;
